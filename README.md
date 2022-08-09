@@ -1,5 +1,7 @@
 # Event Envelope Pattern
 
+![image](https://user-images.githubusercontent.com/48385288/183649586-c283bb2c-85b4-4e68-8cf8-e5f748d9f850.png)
+
 > [https://developer.confluent.io/patterns/](https://developer.confluent.io/patterns/) 에서 소개된 Event Envelope Pattern 에 대해서 실습합니다.
 
 # 설명
