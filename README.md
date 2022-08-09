@@ -6,15 +6,30 @@
 
 # 설명
 
-- 이벤트 스트리밍 플랫폼은 다양한 유형의 애플리케이션이 함께 작동할 수 있게 해준다. 
-- 이벤트 봉투는 이벤트 스트리밍 애플리케이션을 통해 전송된 모든 이벤트에서 잘 알려진 표준 필드 세트를 제공합니다. 
-- 봉투는 기본 이벤트 형식과 독립적이며, 종종 암호화 유형, 스키마, 키 및 직렬화 형식과 같은 속성을 참조합니다. 
-- 봉투는 네트워킹의 프로토콜 헤더(예: TCP-IP)와 유사합니다.
+- Event Stream Platform 은 여러 유형의 서로 다른 애플리케이션에서 동작할 수 있게 해준다.
+  - standardize
+  - general
+- Event Envelope Pattern 은 Event Streaming Application 사이에서 전송되는 모든 Event 에 대해서 General 한 데이터 구조를 제공한다.
+- Event Envelope 은 어떠한 이벤트 형식과도 독립적이다.
+- Event Envelope 에 암호화를 걸 수도 있고 부가적인 정보를 표준화하여 전송/수신할 수 있게 한다 
+  - TCP-IP 와 같은 Networking Protocol Header와 유사하다
 
 ### Problem
 
 - How can I convey information to all participants in an Event Streaming Platform independently of the event payload? 
 - For example, how can I convey how to decrypt an Event, what schema is used, or what ID defines the uniqueness of the event?
 
-# Architecture
+# System Components
 
+- Order Service
+- Delivery Service
+- messaging-infra
+- rabbitmq
+
+# Run
+
+### run rabbit mq
+
+```shell
+docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
+```

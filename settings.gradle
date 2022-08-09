@@ -1,5 +1,6 @@
 rootProject.name = 'event-envelope'
+
 include 'order-service'
-include 'delivery'
 include 'messaging-infra'
+include 'delivery-service'
 
