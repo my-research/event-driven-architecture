@@ -33,3 +33,9 @@
 ```shell
 docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
 ```
+
+### References
+
+- [https://spring.io/guides/gs/messaging-rabbitmq/](https://spring.io/guides/gs/messaging-rabbitmq/)
+- [https://developer.confluent.io/patterns/](https://developer.confluent.io/patterns/)
+- [https://www.rabbitmq.com/tutorials/tutorial-one-java.html](https://www.rabbitmq.com/tutorials/tutorial-one-java.html)
