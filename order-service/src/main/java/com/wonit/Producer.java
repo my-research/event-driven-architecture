@@ -17,7 +17,7 @@ public class Producer {
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-            Ordered orderedEvent = Ordered.of(1L, 2L, "seoul");
+            Ordered orderedEvent = Ordered.of(1L, 2L, "yeosu4");
             String serialized = Serializer.getInstance().serialize(orderedEvent);
             channel.basicPublish("", QUEUE_NAME, null, serialized.getBytes(StandardCharsets.UTF_8));
             System.out.println(" [x] Sent '" + serialized + "'");
