@@ -13,10 +13,14 @@ repositories {
 }
 
 dependencies {
+    // spring
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'com.rabbitmq:amqp-client:5.14.2'
+    implementation 'org.springframework.amqp:spring-rabbit:2.4.6'
+
+    // serialize
     implementation 'com.google.code.gson:gson:2.9.0'
 
+    // testing
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
