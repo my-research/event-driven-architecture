@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.ToString;
 import org.junit.jupiter.api.Test;
 
-class GeneralEnvelopTest {
+class GeneralEnvelopeTest {
 
     public static final Some SOME = new Some(26, "some name");
     public static final Any ANY = new Any("address", "locale");
@@ -31,21 +31,21 @@ class GeneralEnvelopTest {
 
     @Test
     void wrapping_test() {
-        GeneralEnvelop<Some> someWrapped = GeneralEnvelop.wrap(SOME);
-        assertThat(someWrapped.payload).isEqualTo(SOME);
+        Envelope<Some> someWrapped = GeneralEnvelope.wrap(SOME);
+        assertThat(someWrapped.getPayload()).isEqualTo(SOME);
 
-        GeneralEnvelop<Any> anyWrapped = GeneralEnvelop.wrap(ANY);
-        assertThat(anyWrapped.payload).isEqualTo(ANY);
+        Envelope<Any> anyWrapped = GeneralEnvelope.wrap(ANY);
+        assertThat(anyWrapped.getPayload()).isEqualTo(ANY);
     }
 
     @Test
     void unwrapping_test() {
-        GeneralEnvelop<Some> someWrapped = GeneralEnvelop.wrap(SOME);
-        Some some = GeneralEnvelop.unwrap(someWrapped);
+        Envelope<Some> someWrapped = GeneralEnvelope.wrap(SOME);
+        Some some = GeneralEnvelope.unwrap(someWrapped);
         assertThat(some).isEqualTo(SOME);
 
-        GeneralEnvelop<Any> anyWrapped = GeneralEnvelop.wrap(ANY);
-        Any any = GeneralEnvelop.unwrap(anyWrapped);
+        Envelope<Any> anyWrapped = GeneralEnvelope.wrap(ANY);
+        Any any = GeneralEnvelope.unwrap(anyWrapped);
         assertThat(any).isEqualTo(ANY);
     }
 }
