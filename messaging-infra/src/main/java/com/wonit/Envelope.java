@@ -1,6 +1,6 @@
 package com.wonit;
 
 public interface Envelope<T> {
-    String getId();
+    Header getHeader();
     T getPayload();
 }

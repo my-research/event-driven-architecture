@@ -3,8 +3,8 @@ package com.wonit.event;
 import lombok.Value;
 
 @Value(staticConstructor = "of")
-public class Canceled {
+public class ReceivedOrdered {
     Long id;
-    Long orderId;
-    String reason;
+    Long itemId;
+    String address;
 }
