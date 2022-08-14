@@ -21,12 +21,12 @@
 
 # System Components
 
-- Order Service
-- Delivery Service
-- messaging-infra
-- rabbitmq
-
-# Run
+- **Order Service**
+  - event publisher
+- **Delivery Service**
+  - event consumer
+- messaing
+  - infra : ~~rabbitmq~~ AWS SQS
 
 ### run rabbit mq
 
