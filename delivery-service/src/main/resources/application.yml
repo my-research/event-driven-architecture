@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+wonit:
+  aws:
+    access-key: ${WONIK_SQS_ACCESS_KEY_ID}
+    secret-access-key: ${WONIK_SQS_SECRET_ACCESS_KEY}
+    queue-name: WONIT-ORDERED-DEV
