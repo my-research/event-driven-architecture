@@ -1,11 +1,9 @@
 package com.wonit;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -15,9 +13,10 @@ import lombok.ToString;
 @Data
 public class Header {
     private String id;
+    private String eventType;
     private String from;
 
-    public static Header by(String from) {
-        return new Header(UUID.randomUUID().toString(), from);
+    public static Header by(String eventType, String from) {
+        return new Header(UUID.randomUUID().toString(), eventType, from);
     }
 }

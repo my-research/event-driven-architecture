@@ -13,12 +13,13 @@ repositories {
 }
 
 dependencies {
-    implementation project(':messaging-infra')
+
+    implementation project(':event-envelope-pattern:messaging-infra');
 
     // spring
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // aws spring message
+    // aws
     implementation 'io.awspring.cloud:spring-cloud-starter-aws-messaging:2.4.2'
 
     // serialize

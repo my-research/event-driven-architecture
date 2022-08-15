@@ -1,18 +1,16 @@
 package com.wonit;
 
-import java.util.UUID;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @ToString
 @NoArgsConstructor
-public class GeneralEnvelope<T> implements Envelope<T>{
+public class GeneralEnvelope<T> implements Envelope<T> {
     private Header header;
     private T payload;
 
     // TODO Validation Check
-    public static <T> GeneralEnvelope<T> wrap(String from, T t){
-        Header header = Header.by(from);
+    public static <T> GeneralEnvelope<T> wrap(Header header, T t) {
         return new GeneralEnvelope<>(header, t);
     }
 
