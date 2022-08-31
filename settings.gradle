@@ -1,6 +1,9 @@
-rootProject.name = 'event-envelope'
+rootProject.name = 'event-driven-architecture'
 
 include 'event-envelope-pattern'
 include 'event-envelope-pattern:order-service'
 include 'event-envelope-pattern:messaging-infra'
 include 'event-envelope-pattern:delivery-service'
+include 'event-payload'
+include 'commons'
+

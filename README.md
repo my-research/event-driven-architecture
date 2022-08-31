@@ -2,15 +2,18 @@
 
 # 목차
 
-#### [event-envelope-pattern]()
+#### [event-envelope-pattern](#)
 
 - general 한 event 의 사용을 위한 envelope 패턴에 대해서 연구합니다.
 
-#### [domain-event-pattern]()
+#### [event-payload](#)
 
-- DDD 에서 소개된 Domain Event 에 대해서 학습합니다?
+- 이벤트의 구조에 대해서 학습합니다.
+  - unkeyed event
+  - entity event
+  - keyed event
 
-#### [message bus]()
+#### [message bus](#)
 
 - 다양한 message bus solution 에 대해서 알아봅니다
 - solution
