@@ -1,6 +1,5 @@
 package com.wonit.event;
 
-import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import lombok.Value;
 

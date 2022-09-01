@@ -6,4 +6,5 @@ include 'event-envelope-pattern:messaging-infra'
 include 'event-envelope-pattern:delivery-service'
 include 'event-payload'
 include 'commons'
+include 'simple-event-queue'
 

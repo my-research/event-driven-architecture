@@ -1,12 +1,11 @@
 package com.wonit.event;
 
-import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 import lombok.Value;
 
 @ToString
 @Value(staticConstructor = "of")
-public class EntityEvent implements Event{
+public class EntityEvent implements Event {
 
     Long key;
     String value;
